@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import IconContainer from "./IconContainer";
+import IconContainer from "../../sharedComponets/IconContainer/IconContainer";
 
-const UserInfo = ({
+export const UserInfo = ({
   userName,
   userImage,
   files,
@@ -61,5 +61,3 @@ const IconWrapper = styled.div`
   display: inline-flex;
   gap: 1rem;
 `;
-
-export default UserInfo;

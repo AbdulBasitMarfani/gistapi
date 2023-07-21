@@ -1,7 +1,7 @@
+import IconContainer from "sharedComponets/IconContainer/IconContainer";
 import styled from "styled-components";
-import IconContainer from "./IconContainer";
-export const Files = ({ files }) => {
 
+export const Files = ({ files }) => {
   return (
     <FilesWrapper>
       {Object.values(files).map(({ filename, raw_url: rawUrl }) => (
@@ -23,5 +23,3 @@ const FilesWrapper = styled.div`
   font-weight: 500;
   flex-wrap: wrap;
 `;
-
-export default Files;

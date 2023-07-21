@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getPublicGists } from "../services/gistService";
-import { gitsLoading, setGists } from "../redux/slices/gitsSlice";
 import styled from "styled-components";
-import Gist from "./Gist";
+import { Gist } from "components";
+import { gitsLoading, setGists } from "redux/slices/gitsSlice";
+import { getPublicGists } from "services/gistService";
 
-const GistList = () => {
+export const GistList = () => {
   const dispatch = useDispatch();
   const { gistsList, isLoading } = useSelector((state) => state.gistsSlice);
   console.log("isLoading: ", isLoading);
@@ -42,5 +42,3 @@ const GistListWrapper = styled.div`
   max-width: 700px;
   margin: 0 auto;
 `;
-
-export default GistList;

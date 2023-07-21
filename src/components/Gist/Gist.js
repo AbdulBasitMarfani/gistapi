@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import UserInfo from "./UserInfo";
-import { getFormattedDate } from "../utils/helper";
-import Files from "./Files";
+import { getFormattedDate } from "../../utils/helper";
+import { UserInfo, Files } from "components";
 
-const Gist = (props) => {
+export const Gist = (props) => {
   console.log("gist: ", props);
   const {
     description,
@@ -73,5 +72,3 @@ const FlexDiv = styled.div`
   display: flex;
   gap: 1rem;
 `;
-
-export default Gist;

@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import Header from "./components/Header";
 import GlobalStyles from "./GlobalStyle";
-import GistList from "./components/GistList";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
+import { Header, GistList } from "components";
 
 const App = () => {
   return (
