@@ -21,11 +21,6 @@ const Wrapper = styled.div`
   gap: 0.25rem;
   justify-content: center;
   align-items: center;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   color: var(--primary-color);
 `;
 
@@ -33,6 +28,11 @@ const AnchorWrapper = styled.a`
   text-decoration: none;
   font-size: 12px;
   color: var(--primary-color);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 `;
 
 const TextWrapper = styled.span`

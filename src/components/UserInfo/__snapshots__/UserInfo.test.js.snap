@@ -22,7 +22,7 @@ exports[`UserInfo should match snapshot 1`] = `
       class="sc-kpDqfm brArDb"
     >
       <div
-        class="sc-aXZVg qohbc"
+        class="sc-aXZVg iEJzdC"
       >
         <span
           class="octicon octicon-code"
@@ -34,13 +34,13 @@ exports[`UserInfo should match snapshot 1`] = `
         </span>
       </div>
       <div
-        class="sc-aXZVg qohbc"
+        class="sc-aXZVg iEJzdC"
       >
         <span
           class="octicon octicon-repo-forked"
         />
         <a
-          class="sc-gEvEer bNvtTW"
+          class="sc-gEvEer bGYWPw"
           href="https://api.github.com/gists/3d62c5bac006167e2bf09b938e172bef/forks"
           target="_blank"
         >
@@ -48,13 +48,13 @@ exports[`UserInfo should match snapshot 1`] = `
         </a>
       </div>
       <div
-        class="sc-aXZVg qohbc"
+        class="sc-aXZVg iEJzdC"
       >
         <span
           class="octicon octicon-comment"
         />
         <a
-          class="sc-gEvEer bNvtTW"
+          class="sc-gEvEer bGYWPw"
           href="https://api.github.com/gists/3d62c5bac006167e2bf09b938e172bef/comments"
           target="_blank"
         >
@@ -62,7 +62,7 @@ exports[`UserInfo should match snapshot 1`] = `
         </a>
       </div>
       <div
-        class="sc-aXZVg qohbc"
+        class="sc-aXZVg iEJzdC"
       >
         <span
           class="octicon octicon-star"

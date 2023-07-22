@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Gist } from "components";
 import { gistsLoading, setGists, setGistsError } from "redux/slices/gistsSlice";
 import { getPublicGists } from "services/gistService";
-import { NoDataFound, Skeleton } from "sharedComponets";
+import { NoDataFound, Skeleton } from "sharedComponents";
 import { isEmpty } from "utils/helper";
 
 const API_CRASH_MESSAGE = "Something went wrong";

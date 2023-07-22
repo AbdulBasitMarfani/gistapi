@@ -3,7 +3,7 @@
 exports[`Gist should match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-eDPEul iBgqFb"
+    class="sc-eDPEul jxwjRE"
   >
     <div
       class="sc-jlZhew bTOGLI"
@@ -25,7 +25,7 @@ exports[`Gist should match snapshot 1`] = `
         class="sc-dLMFU goPmRk"
       >
         <div
-          class="sc-aXZVg qohbc"
+          class="sc-aXZVg iEJzdC"
         >
           <span
             class="octicon octicon-code"
@@ -37,13 +37,13 @@ exports[`Gist should match snapshot 1`] = `
           </span>
         </div>
         <div
-          class="sc-aXZVg qohbc"
+          class="sc-aXZVg iEJzdC"
         >
           <span
             class="octicon octicon-repo-forked"
           />
           <a
-            class="sc-gEvEer bNvtTW"
+            class="sc-gEvEer bGYWPw"
             href="https://api.github.com/gists/3d62c5bac006167e2bf09b938e172bef/forks"
             target="_blank"
           >
@@ -51,13 +51,13 @@ exports[`Gist should match snapshot 1`] = `
           </a>
         </div>
         <div
-          class="sc-aXZVg qohbc"
+          class="sc-aXZVg iEJzdC"
         >
           <span
             class="octicon octicon-comment"
           />
           <a
-            class="sc-gEvEer bNvtTW"
+            class="sc-gEvEer bGYWPw"
             href="https://api.github.com/gists/3d62c5bac006167e2bf09b938e172bef/comments"
             target="_blank"
           >
@@ -65,7 +65,7 @@ exports[`Gist should match snapshot 1`] = `
           </a>
         </div>
         <div
-          class="sc-aXZVg qohbc"
+          class="sc-aXZVg iEJzdC"
         >
           <span
             class="octicon octicon-star"
@@ -109,13 +109,13 @@ exports[`Gist should match snapshot 1`] = `
       class="sc-kAyceB dAXXrM"
     >
       <div
-        class="sc-aXZVg qohbc"
+        class="sc-aXZVg iEJzdC"
       >
         <span
           class="octicon octicon-file"
         />
         <a
-          class="sc-gEvEer bNvtTW"
+          class="sc-gEvEer bGYWPw"
           href="https://gist.githubusercontent.com/dwfault/80059b65e85973dbd629dff8d041588d/raw/3599c7641b180f2a4b6041d5e0f2e38f073f0fe6/gistfile1.txt"
           target="_blank"
         >
@@ -123,13 +123,13 @@ exports[`Gist should match snapshot 1`] = `
         </a>
       </div>
       <div
-        class="sc-aXZVg qohbc"
+        class="sc-aXZVg iEJzdC"
       >
         <span
           class="octicon octicon-file"
         />
         <a
-          class="sc-gEvEer bNvtTW"
+          class="sc-gEvEer bGYWPw"
           href="https://gist.githubusercontent.com/Bezarius/cf8d6d227abb4450fa548c15148d5285/raw/b8aad7d46618739da077c0e0a84d26f805f2f929/test.xml"
           target="_blank"
         >

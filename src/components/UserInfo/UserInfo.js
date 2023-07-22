@@ -1,4 +1,4 @@
-import { IconContainer } from "sharedComponets";
+import { IconContainer } from "sharedComponents";
 import styled from "styled-components";
 
 export const UserInfo = ({

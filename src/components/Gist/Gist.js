@@ -44,7 +44,7 @@ export const Gist = (props) => {
 
 const InfoCardWrapper = styled.div`
   padding: 1.5rem;
-  marging: 0.5rem 0;
+  margin: 0.5rem 0;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
