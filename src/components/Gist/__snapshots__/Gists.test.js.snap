@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gist should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-eDPEul iBgqFb"
+  >
+    <div
+      class="sc-jlZhew bTOGLI"
+    >
+      <div
+        class="sc-cwHptR cSDPsk"
+      >
+        <img
+          class="sc-jEACwC bxQMCM"
+          src="https://avatars.githubusercontent.com/u/39902740?v=4"
+        />
+        <span
+          class="sc-cPiKLX brIxCm"
+        >
+          JianHongHong
+        </span>
+      </div>
+      <div
+        class="sc-dLMFU goPmRk"
+      >
+        <div
+          class="sc-aXZVg qohbc"
+        >
+          <span
+            class="octicon octicon-code"
+          />
+          <span
+            class="sc-eqUAAy cYzGHt"
+          >
+            2 Files
+          </span>
+        </div>
+        <div
+          class="sc-aXZVg qohbc"
+        >
+          <span
+            class="octicon octicon-repo-forked"
+          />
+          <a
+            class="sc-gEvEer bNvtTW"
+            href="https://api.github.com/gists/3d62c5bac006167e2bf09b938e172bef/forks"
+            target="_blank"
+          >
+            Forks
+          </a>
+        </div>
+        <div
+          class="sc-aXZVg qohbc"
+        >
+          <span
+            class="octicon octicon-comment"
+          />
+          <a
+            class="sc-gEvEer bNvtTW"
+            href="https://api.github.com/gists/3d62c5bac006167e2bf09b938e172bef/comments"
+            target="_blank"
+          >
+            0 Comments
+          </a>
+        </div>
+        <div
+          class="sc-aXZVg qohbc"
+        >
+          <span
+            class="octicon octicon-star"
+          />
+          <span
+            class="sc-eqUAAy cYzGHt"
+          >
+            Stars
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-fPXMVe dtUTue"
+    >
+      <div
+        class="sc-eldPxv cxEpEE"
+      >
+        <p>
+          Created at:
+        </p>
+        <p>
+          24/05/2023
+        </p>
+      </div>
+      <div
+        class="sc-eldPxv cxEpEE"
+      >
+        <p>
+          Last Updated:
+        </p>
+        <p>
+          24/05/2023
+        </p>
+      </div>
+    </div>
+    <span>
+      Solution to level 1 in Untrusted: http://alex.nisnevich.com/untrusted/
+    </span>
+    <div
+      class="sc-kAyceB dAXXrM"
+    >
+      <div
+        class="sc-aXZVg qohbc"
+      >
+        <span
+          class="octicon octicon-file"
+        />
+        <a
+          class="sc-gEvEer bNvtTW"
+          href="https://gist.githubusercontent.com/dwfault/80059b65e85973dbd629dff8d041588d/raw/3599c7641b180f2a4b6041d5e0f2e38f073f0fe6/gistfile1.txt"
+          target="_blank"
+        >
+          gistfile1.txt
+        </a>
+      </div>
+      <div
+        class="sc-aXZVg qohbc"
+      >
+        <span
+          class="octicon octicon-file"
+        />
+        <a
+          class="sc-gEvEer bNvtTW"
+          href="https://gist.githubusercontent.com/Bezarius/cf8d6d227abb4450fa548c15148d5285/raw/b8aad7d46618739da077c0e0a84d26f805f2f929/test.xml"
+          target="_blank"
+        >
+          test.xml
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

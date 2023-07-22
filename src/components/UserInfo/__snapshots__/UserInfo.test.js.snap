@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserInfo should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-kAyceB dYQapR"
+  >
+    <div
+      class="sc-imWYAI jaoXtE"
+    >
+      <img
+        class="sc-jXbUNg hjfduJ"
+        src="https://avatars.githubusercontent.com/u/127468175?v=4"
+      />
+      <span
+        class="sc-dhKdcB hACwmB"
+      >
+        Abdul Basit
+      </span>
+    </div>
+    <div
+      class="sc-kpDqfm brArDb"
+    >
+      <div
+        class="sc-aXZVg qohbc"
+      >
+        <span
+          class="octicon octicon-code"
+        />
+        <span
+          class="sc-eqUAAy cYzGHt"
+        >
+          2 Files
+        </span>
+      </div>
+      <div
+        class="sc-aXZVg qohbc"
+      >
+        <span
+          class="octicon octicon-repo-forked"
+        />
+        <a
+          class="sc-gEvEer bNvtTW"
+          href="https://api.github.com/gists/3d62c5bac006167e2bf09b938e172bef/forks"
+          target="_blank"
+        >
+          Forks
+        </a>
+      </div>
+      <div
+        class="sc-aXZVg qohbc"
+      >
+        <span
+          class="octicon octicon-comment"
+        />
+        <a
+          class="sc-gEvEer bNvtTW"
+          href="https://api.github.com/gists/3d62c5bac006167e2bf09b938e172bef/comments"
+          target="_blank"
+        >
+          0 Comments
+        </a>
+      </div>
+      <div
+        class="sc-aXZVg qohbc"
+      >
+        <span
+          class="octicon octicon-star"
+        />
+        <span
+          class="sc-eqUAAy cYzGHt"
+        >
+          Stars
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
