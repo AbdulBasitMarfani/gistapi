@@ -12,10 +12,10 @@ export const UserInfo = ({
   const fileCount = Object.keys(files).length;
   return (
     <Wrapper>
-      <UserBaiscData>
+      <UserBasicData>
         <ImageWrapper src={userImage} />
         <NameWrapper>{userName}</NameWrapper>
-      </UserBaiscData>
+      </UserBasicData>
       <IconWrapper>
         <IconContainer iconName="code" text={`${fileCount} Files`} />
         <IconContainer iconName="repo-forked" text="Forks" link={forksUrl} />
@@ -34,7 +34,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const UserBaiscData = styled.div`
+const UserBasicData = styled.div`
   display: flex;
   gap: 0.5rem;
   align-items: center;

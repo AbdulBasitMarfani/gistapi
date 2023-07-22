@@ -13,16 +13,16 @@ export const gistsSlice = createSlice({
     setGists: (state, action) => {
       state.gistsList = action.payload;
     },
-    gitsLoading: (state, action) => {
+    gistsLoading: (state, action) => {
       state.isLoading = action.payload;
     },
-    setGitsError: (state, action) => {
+    setGistsError: (state, action) => {
       state.isError = action.payload;
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { setGists, gitsLoading, setGitsError } = gistsSlice.actions;
+export const { setGists, gistsLoading, setGistsError } = gistsSlice.actions;
 
 export default gistsSlice.reducer;

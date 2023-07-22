@@ -1,12 +1,13 @@
 import dayjs from "dayjs";
-import { DATE_FORMAT, DEBOUNCE_TIMEOUT } from "./constant";
+import { DEBOUNCE_TIMEOUT } from "./constant";
 
 /**
  * Get date and return string formatted date
  * @param {*} date
+ * @param {string} date format
  * @returns {string} formatted date
  */
-const getFormattedDate = (date) => dayjs(date).format(DATE_FORMAT);
+const getFormattedDate = (date, format) => dayjs(date).format(format);
 
 /** To delay the execution of func */
 const debounceFunction = () => {

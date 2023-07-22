@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { UserInfo, Files } from "components";
 import { getFormattedDate } from "utils/helper";
+import { DATE_FORMAT } from "utils/constant";
 
 export const Gist = (props) => {
   const {
@@ -28,11 +29,11 @@ export const Gist = (props) => {
       <FlexDiv>
         <DateWrapper>
           <p>Created at:</p>
-          <p>{getFormattedDate(createdAt)}</p>
+          <p>{getFormattedDate(createdAt, DATE_FORMAT)}</p>
         </DateWrapper>
         <DateWrapper>
           <p>Last Updated:</p>
-          <p>{getFormattedDate(updatedAt)}</p>
+          <p>{getFormattedDate(updatedAt, DATE_FORMAT)}</p>
         </DateWrapper>
       </FlexDiv>
       {description && <span>{description}</span>}

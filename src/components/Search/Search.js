@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import Octicon from "react-octicon";
 import styled from "styled-components";
 import { getGistForUser, getPublicGists } from "services/gistService";
-import { gitsLoading, setGists, setGitsError } from "redux/slices/gitsSlice";
+import { gistsLoading, setGists, setGistsError } from "redux/slices/gistsSlice";
 import { isEmpty, debounce } from "utils/helper";
 
 export const Search = () => {
@@ -12,41 +12,41 @@ export const Search = () => {
 
   /** If search gets empty get all gist */
   const getGists = async () => {
-    dispatch(gitsLoading(true));
-    dispatch(setGitsError(false));
+    dispatch(gistsLoading(true));
+    dispatch(setGistsError(false));
     try {
       const { data } = await getPublicGists();
       dispatch(setGists(data));
     } catch (error) {
       console.error(error);
-      dispatch(setGitsError(true));
+      dispatch(setGistsError(true));
     } finally {
-      dispatch(gitsLoading(false));
+      dispatch(gistsLoading(false));
     }
   };
 
   /** Get gist on the basis of value*/
   const searchUser = async (value) => {
-    dispatch(setGitsError(false));
+    dispatch(setGistsError(false));
     if (isEmpty(value)) {
       dispatch(setGists([]));
       getGists();
       return;
     }
     try {
-      dispatch(gitsLoading(true));
+      dispatch(gistsLoading(true));
       const { data } = await getGistForUser(value);
       dispatch(setGists(data));
     } catch (error) {
-      dispatch(setGitsError(true));
+      dispatch(setGistsError(true));
       console.error(error);
     } finally {
-      dispatch(gitsLoading(false));
+      dispatch(gistsLoading(false));
     }
   };
 
   /**
-   * Change handler for serach field
+   * Change handler for search field
    */
   const handleChange = ({ target: { value } }) => {
     setSearchValue(value);
