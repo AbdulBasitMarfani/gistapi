@@ -1,4 +1,4 @@
-import IconContainer from "sharedComponets/IconContainer/IconContainer";
+import { IconContainer } from "sharedComponets";
 import styled from "styled-components";
 
 export const Files = ({ files }) => {

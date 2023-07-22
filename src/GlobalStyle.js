@@ -3,7 +3,8 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 :root {
   --primary-color: #689EE6;
-  --border-color: #e9e4e4
+  --border-color: #e9e4e4;
+  --shimmer-backgroud: #efefef;
 }
   body{
     margin: 0;

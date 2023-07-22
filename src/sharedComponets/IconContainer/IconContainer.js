@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Octicon from "react-octicon";
 
-const IconContainer = ({ iconName, link, text }) => {
+export const IconContainer = ({ iconName, link, text }) => {
   return (
     <Wrapper>
       <Octicon name={iconName} />
@@ -21,9 +21,11 @@ const Wrapper = styled.div`
   gap: 0.25rem;
   justify-content: center;
   align-items: center;
-//   width: 100px;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   color: var(--primary-color);
 `;
 
@@ -36,5 +38,3 @@ const AnchorWrapper = styled.a`
 const TextWrapper = styled.span`
   font-size: 12px;
 `;
-
-export default IconContainer;

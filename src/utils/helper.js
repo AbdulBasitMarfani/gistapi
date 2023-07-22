@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
-import { DEBOUNCE_TIMEOUT } from "./contant";
+import { DATE_FORMAT, DEBOUNCE_TIMEOUT } from "./constant";
 
-const getFormattedDate = (date) => dayjs(date).format("DD/MM/YYYY");
+const getFormattedDate = (date) => dayjs(date).format(DATE_FORMAT);
 
 const debounceFunction = () => {
   let timeoutId = null;

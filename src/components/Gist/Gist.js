@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { getFormattedDate } from "../../utils/helper";
 import { UserInfo, Files } from "components";
+import { getFormattedDate } from "utils/helper";
 
 export const Gist = (props) => {
   console.log("gist: ", props);

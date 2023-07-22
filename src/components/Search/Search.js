@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import Octicon from "react-octicon";
 import styled from "styled-components";
 import { getGistForUser, getPublicGists } from "services/gistService";
-import { setGists } from "redux/slices/gitsSlice";
+import { gitsLoading, setGists, setGitsError } from "redux/slices/gitsSlice";
 import { isEmpty, debounce } from "utils/helper";
 
 export const Search = () => {
@@ -22,14 +22,16 @@ export const Search = () => {
    * get all gists
    */
   const getGists = async () => {
-    // dispatch(startLoadingGists());
+    dispatch(gitsLoading(true));
+    dispatch(setGitsError(false));
     try {
       const { data } = await getPublicGists();
       dispatch(setGists(data));
     } catch (error) {
-      console.log(error);
+      console.error(error);
+      dispatch(setGitsError(true));
     } finally {
-      // dispatch(stopLoadingGists());
+      dispatch(gitsLoading(false));
     }
   };
 
@@ -38,19 +40,21 @@ export const Search = () => {
    */
   const searchUser = async (value) => {
     console.log("value: ", value);
+    dispatch(setGitsError(false));
     if (isEmpty(value)) {
       dispatch(setGists([]));
       getGists();
       return;
     }
-    // dispatch(startLoadingGists());
     try {
+      dispatch(gitsLoading(true));
       const { data } = await getGistForUser(value);
       dispatch(setGists(data));
     } catch (error) {
-      console.log(error);
+      dispatch(setGitsError(true));
+      console.error(error);
     } finally {
-      // dispatch(stopLoadingGists());s
+      dispatch(gitsLoading(false));
     }
   };
 
