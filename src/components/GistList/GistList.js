@@ -50,8 +50,8 @@ export const GistList = () => {
 
   return (
     <GistListWrapper>
-      {gistsList.map((gist, index) => (
-        <Gist {...gist} key={index} />
+      {gistsList.map((gist) => (
+        <Gist {...gist} key={gist.id} />
       ))}
     </GistListWrapper>
   );
