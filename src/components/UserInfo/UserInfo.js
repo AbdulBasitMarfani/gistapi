@@ -9,9 +9,6 @@ export const UserInfo = ({
   comments,
   commentsUrl,
 }) => {
-  console.log("userImage: ", userImage);
-  console.log("userName: ", userName);
-  //   return userName;
   const fileCount = Object.keys(files).length;
   return (
     <Wrapper>

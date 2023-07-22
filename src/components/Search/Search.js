@@ -10,17 +10,7 @@ export const Search = () => {
   const [searchValue, setSearchValue] = useState("");
   const dispatch = useDispatch();
 
-  /**
-   * change handler for search field
-   */
-  const handleChange = ({ target: { value } }) => {
-    setSearchValue(value);
-    debounce(() => searchUser(value));
-  };
-
-  /**
-   * get all gists
-   */
+  /** If search gets empty get all gist */
   const getGists = async () => {
     dispatch(gitsLoading(true));
     dispatch(setGitsError(false));
@@ -35,11 +25,8 @@ export const Search = () => {
     }
   };
 
-  /**
-   * callback for search
-   */
+  /** Get gist on the basis of value*/
   const searchUser = async (value) => {
-    console.log("value: ", value);
     dispatch(setGitsError(false));
     if (isEmpty(value)) {
       dispatch(setGists([]));
@@ -56,6 +43,14 @@ export const Search = () => {
     } finally {
       dispatch(gitsLoading(false));
     }
+  };
+
+  /**
+   * Change handler for serach field
+   */
+  const handleChange = ({ target: { value } }) => {
+    setSearchValue(value);
+    debounce(() => searchUser(value));
   };
 
   return (

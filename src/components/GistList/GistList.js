@@ -9,11 +9,10 @@ import { isEmpty } from "utils/helper";
 
 export const GistList = () => {
   const dispatch = useDispatch();
+  
   const { gistsList, isLoading, isError } = useSelector(
     (state) => state.gistsSlice
   );
-  console.log("isLoading: ", isLoading);
-  console.log("gitsList: ", gistsList);
 
   const fetchGistList = async () => {
     dispatch(setGitsError(false));
@@ -32,10 +31,18 @@ export const GistList = () => {
     fetchGistList();
   }, []);
 
+  /** Show loading when api is fetching gits */
   if (isLoading) return <Skeleton count={4} />;
 
+  /** If api fails show the fall back component
+   *  Text can be variable based on error codes
+   *  and message return from api
+   */
   if (isError) return <NoDataFound text={"Something went wrong"} />;
 
+  /**
+   * If no data return from api show empty state
+   */
   if (isEmpty(gistsList)) return <NoDataFound text={"No Gists Found"} />;
 
   return (

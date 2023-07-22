@@ -1,8 +1,14 @@
 import dayjs from "dayjs";
 import { DATE_FORMAT, DEBOUNCE_TIMEOUT } from "./constant";
 
+/**
+ * Get date and return string formatted date
+ * @param {*} date
+ * @returns {string} formatted date
+ */
 const getFormattedDate = (date) => dayjs(date).format(DATE_FORMAT);
 
+/** To delay the execution of func */
 const debounceFunction = () => {
   let timeoutId = null;
   return (callback) => {
@@ -13,6 +19,11 @@ const debounceFunction = () => {
 
 const debounce = debounceFunction();
 
+/**
+ * It check if the given data is empty or not
+ * @param {any} value any data
+ * @returns {Boolean} true/false based on condition
+ */
 const isEmpty = (value) =>
   value === undefined ||
   value === null ||

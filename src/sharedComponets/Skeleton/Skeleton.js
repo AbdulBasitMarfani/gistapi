@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Skeleton = ({ count }) => {
-  console.log("count: ", count);
   return (
     <Wrapper>
       {Array(count)

@@ -3,7 +3,6 @@ import { UserInfo, Files } from "components";
 import { getFormattedDate } from "utils/helper";
 
 export const Gist = (props) => {
-  console.log("gist: ", props);
   const {
     description,
     owner: { login: userName, avatar_url: userImage },
@@ -23,7 +22,6 @@ export const Gist = (props) => {
     comments,
     commentsUrl,
   };
-  console.log("getFormattedDate(createdAt): ", getFormattedDate(createdAt));
   return (
     <InfoCardWrapper>
       <UserInfo {...userInfoProps} />
